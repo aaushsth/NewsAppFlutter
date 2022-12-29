@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_app/pages/components/loading_overlay.dart';
 
+import '../components/loading_overlay.dart';
 import 'components/posts_list_item.dart';
 import 'posts_controller.dart';
 

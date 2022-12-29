@@ -4,18 +4,18 @@ import 'package:get/get.dart';
 import 'home_controller.dart';
 
 class HomePage extends GetView<HomeController> {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        title: const Text('Home'),
       ),
-      body: Container(
-        child: Center(
-          child: Text(
-            "Home Page",
-            style: TextStyle(fontSize: 20),
-          ),
+      body: const Center(
+        child: Text(
+          "Home Page",
+          style: TextStyle(fontSize: 20),
         ),
       ),
     );

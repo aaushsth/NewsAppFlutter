@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
-import 'package:getx_app/pages/account/account_controller.dart';
-import 'package:getx_app/pages/home/home_controller.dart';
-import 'package:getx_app/pages/posts/posts_controller.dart';
+import 'package:get_x_example/pages/posts/posts_controller.dart';
 
+import '../account/account_controller.dart';
+import '../home/home_controller.dart';
 import 'dashboard_controller.dart';
 
 class DashboardBinding extends Bindings {

@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:getx_app/models/post.dart';
-import 'package:getx_app/pages/posts/posts_provider.dart';
+import 'package:get_x_example/pages/posts/posts_provider.dart';
+import '../../models/post.dart';
 
 class PostsController extends GetxController {
   List<Post> postsList = [];
@@ -16,8 +16,10 @@ class PostsController extends GetxController {
       onError: (error) {
         isLoading = false;
         update();
-        print("Error");
-      },
+        print("Error:$error");
+      }, beforeSend: () {
+
+    },
     );
     super.onInit();
   }

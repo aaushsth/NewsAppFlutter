@@ -1,12 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:getx_app/models/post.dart';
+
+import '../../../models/post.dart';
 
 class PostsListItem extends StatelessWidget {
   final Post post;
 
-  const PostsListItem({Key key, this.post}) : super(key: key);
+  const PostsListItem({ Key? key, required this.post}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

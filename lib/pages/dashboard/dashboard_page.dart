@@ -1,14 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_app/pages/account/account_page.dart';
-import 'package:getx_app/pages/alerts/alerts_page.dart';
-import 'package:getx_app/pages/home/home_page.dart';
-import 'package:getx_app/pages/posts/posts_page.dart';
 
+import '../account/account_page.dart';
+import '../alerts/alerts_page.dart';
+import '../home/home_page.dart';
+import '../posts/posts_page.dart';
 import 'dashboard_controller.dart';
 
 class DashboardPage extends StatelessWidget {
+  const DashboardPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GetBuilder<DashboardController>(
@@ -55,7 +57,7 @@ class DashboardPage extends StatelessWidget {
     );
   }
 
-  _bottomNavigationBarItem({IconData icon, String label}) {
+  _bottomNavigationBarItem({required IconData icon, required String label}) {
     return BottomNavigationBarItem(
       icon: Icon(icon),
       label: label,

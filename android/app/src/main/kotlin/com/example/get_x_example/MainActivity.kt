@@ -1,4 +1,4 @@
-package com.example.getx_app
+package com.example.get_x_example
 
 import io.flutter.embedding.android.FlutterActivity
 

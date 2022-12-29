@@ -1,12 +1,18 @@
+import 'dart:ffi';
+
 class Post {
-  int userId;
-  int id;
-  String title;
-  String body;
+  Post({
+    required this.userId,
+    required this.id,
+    required this.title,
+    required this.body,
+  });
+  late final int userId;
+  late final int id;
+  late final String title;
+  late final String body;
 
-  Post({this.userId, this.id, this.title, this.body});
-
-  Post.fromJson(Map<String, dynamic> json) {
+  Post.fromJson(Map<String, dynamic> json){
     userId = json['userId'];
     id = json['id'];
     title = json['title'];
@@ -14,11 +20,11 @@ class Post {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['userId'] = this.userId;
-    data['id'] = this.id;
-    data['title'] = this.title;
-    data['body'] = this.body;
-    return data;
+    final _data = <String, dynamic>{};
+    _data['userId'] = userId;
+    _data['id'] = id;
+    _data['title'] = title;
+    _data['body'] = body;
+    return _data;
   }
 }
